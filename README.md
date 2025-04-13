@@ -73,6 +73,7 @@ This project uses **hybrid retrieval** to improve the relevance of retrieved inf
 
 ##  Project Structure
 
+---
 RAG_LLM_SST-v2/ │
 │
 │   .gitignore
@@ -112,7 +113,7 @@ RAG_LLM_SST-v2/ │
     │
     └───ui
             ui.py
-
+---
             
 ---
 
