@@ -105,7 +105,7 @@ This project uses **hybrid retrieval** to improve the relevance of retrieved inf
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/RAG-LLM-SST.git
+git clone https://github.com/valentinb67/RAG-LLM_for_SST.git
 cd RAG-LLM-SST
 ```
 
