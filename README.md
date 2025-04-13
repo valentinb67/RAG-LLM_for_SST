@@ -73,47 +73,30 @@ This project uses **hybrid retrieval** to improve the relevance of retrieved inf
 
 ##  Project Structure
 
----
-RAG_LLM_SST-v2/ │
-│
-│   .gitignore
-│   environment.yml
-│   hybrid_run_LLM.py
-│   hybrid_run_project.py
-│   README.md
-│   requirements.txt
-│
-├───config
-│       .env
-│       config.yaml
-│
-├───data
-│   ├───logs
-│   ├───processed
-│   │       extracted_texts.json
-│   │
-│   └───raw
-│           Guide des données techniques v5.01_2024.pdf
-│           Manuel du Formateur SST janvier 2024 version surlignée.pdf
-│
-├───models
-│   │
-│   └───index
-└───src
-    ├───api
-    │       api.py
-    │       chatgpt_api.py
-    │
-    ├───data_processing
-    │       hybrid_data_process.py
-    │
-    ├───model_management
-    │       hybrid_retrieval.py
-    │       hybrid_vector_store.py
-    │
-    └───ui
-            ui.py
----
+```
+├── config/
+│   ├── .env
+│   └── config.yaml
+├── data/
+│   ├── raw/                # Original PDFs
+│   ├── processed/          # Cleaned and chunked text
+│   └── logs/               # Optional logs
+├── docs/                  
+├── models/
+│   ├── embeddings/         # Downloaded sentence-transformer models
+│   └── index/
+│       └── index_files/    # FAISS index and metadata_passages.json
+├── src/
+│   ├── api/                # FastAPI and ChatGPT interface
+│   ├── data_processing/    # PDF parsing and cleaning
+│   ├── model_management/   # FAISS, BM25, hybrid retrieval
+│   └── ui/                 # Gradio interface
+├── environment.yml
+├── requirements.txt
+├── hybrid_run_project.py   # Main pipeline runner (from scratch)
+├── hybrid_run_LLM.py       # Lightweight runner (requires preprocessed data)
+└── README.md
+```
             
 ---
 
