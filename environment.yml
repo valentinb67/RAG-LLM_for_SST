@@ -1,0 +1,25 @@
+name: rag_llm_sst
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - numpy=2.0.2
+  - pandas=2.2.3
+  - matplotlib=3.9.4
+  - scikit-learn=1.6.1
+  - pip:
+      - openai==0.28.0
+      - python-dotenv==1.0.1
+      - PyPDF2
+      - nltk==3.9.1
+      - faiss-cpu==1.10.0
+      - sentence-transformers==3.4.1
+      - rank-bm25==0.2.2
+      - fastapi==0.115.11
+      - uvicorn==0.34.0
+      - gradio==4.44.1
+      - pydantic==2.10.6
+
+
